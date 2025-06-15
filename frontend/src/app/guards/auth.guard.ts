@@ -6,14 +6,16 @@ import { Rol } from '../enums/rol';
 export class AuthGuard implements CanActivate {
   constructor(private router: Router) {}
 
- canActivate(): boolean {
-  const token = localStorage.getItem('jwt');
-  const rol = localStorage.getItem('rol');
- if (token && rol === Rol.ADMIN) {
+  canActivate(): boolean {
+    const token = localStorage.getItem('jwt');
+    const rol = localStorage.getItem('rol') as Rol;
+    //console.log(rol);
+    if (token && rol === Rol.ADMIN) {
       return true;
     }
-  this.router.navigate(['/login']);
-  return false;
-}
+
+    this.router.navigate(['/login']);
+    return false;
+  }
 }
 
