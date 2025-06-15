@@ -1,0 +1,25 @@
+
+<div class="d-flex vh-100">
+  <!-- Sidebar -->
+  <nav class="bg-dark text-white p-3" style="width: 250px;">
+    <h2 class="text-center mb-4">{{ nombre }}</h2>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2">
+        <a class="nav-link text-white" routerLink="/dashboard" routerLinkActive="active">Inicio</a>
+      </li>
+      <li class="nav-item mb-2">
+        <a class="nav-link text-white" routerLink="/clientes" routerLinkActive="active">Clientes</a>
+      </li> 
+      <li class="nav-item mb-2">
+        <a class="nav-link text-white" routerLink="/configuracion" routerLinkActive="active">Configuración</a>
+      </li>
+      <li class="nav-item mt-4">
+        <a class="btn btn-outline-light w-100" (click)="cerrarSesion()" routerLink="/logout">Cerrar sesión</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="flex-grow-1 p-4 bg-light overflow-auto">
+  </div>
+</div>

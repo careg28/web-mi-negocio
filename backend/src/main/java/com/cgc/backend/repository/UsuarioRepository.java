@@ -1,0 +1,12 @@
+package com.cgc.backend.repository;
+
+import com.cgc.backend.model.Usuario;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
+
+@Repository
+public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+    Optional<Usuario> findByUsername(String username); //optional indica que puede existir un usuario o no
+}
