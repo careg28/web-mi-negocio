@@ -4,6 +4,7 @@ import * as AOS from 'aos';
 
 @Component({
   selector: 'app-navbar',
+  standalone: true,
   imports: [],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'

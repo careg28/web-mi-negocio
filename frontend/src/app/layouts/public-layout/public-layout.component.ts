@@ -6,6 +6,7 @@ import { ContactoComponent } from '../../components/contacto/contacto.component'
 
 @Component({
   selector: 'app-public-layout',
+  standalone: true,
   imports: [RouterOutlet, NavbarComponent, FooterComponent],
   templateUrl: './public-layout.component.html',
   styleUrl: './public-layout.component.css'
