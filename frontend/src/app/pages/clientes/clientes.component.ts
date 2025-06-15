@@ -12,6 +12,7 @@ import { MatInputModule } from '@angular/material/input';
 
 @Component({
   selector: 'app-clientes',
+  standalone: true,
   imports: [MatPaginatorModule,  // 👈 IMPORTANTE
     MatTableModule,
     MatCardModule,

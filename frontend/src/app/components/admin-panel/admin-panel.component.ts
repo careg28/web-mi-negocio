@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin-panel',
+  standalone: true,
   imports: [],
   templateUrl: './admin-panel.component.html',
   styleUrl: './admin-panel.component.css'
